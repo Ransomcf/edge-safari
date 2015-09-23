@@ -1,6 +1,5 @@
 # edge-safari
-=========================================
-||THIS IS FOR EDUCATIONAL PURPOSES ONLY||
+THIS IS FOR EDUCATIONAL PURPOSES ONLY
 =========================================
 
 This version only works on edge and safari hence the name.
